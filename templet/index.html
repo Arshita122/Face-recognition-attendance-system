@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="static/styles.css">
+    <title>Face Recognition Attendance System</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Face Recognition Attendance System</h1>
+        
+        <a href="{{ url_for('webcam') }}" target="_blank">
+            <button>Mark Attendance</button>
+        </a>
+        
+        <div>
+            <a href="{{ url_for('view_attendance') }}">
+                <button>View Attendance</button>
+            </a>
+        </div>
+        
+        <div>
+            <a href="{{ url_for('register') }}">
+                <button>Register New User</button>
+            </a>
+        </div>
+        
+        <div>
+            <a href="{{ url_for('logout') }}">
+                <button>Logout</button>
+            </a>
+        </div>
+    </div>
+</body>
+</html>
